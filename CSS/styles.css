@@ -395,6 +395,7 @@ p {color: hsl(0, 0%, 50%);}
 }
 
 .logo-n-contact-grid {grid-column: 1 / span 1; grid-row: 1 / span 1;}
+.input {width: 100%;}
 
 .left-links {grid-column: 1 / span 1; grid-row: 2 / span 1; margin-top: 75px;}
 

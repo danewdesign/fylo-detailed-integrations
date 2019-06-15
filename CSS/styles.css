@@ -1,0 +1,403 @@
+* {box-sizing: border-box;}
+body {margin: 0; font-family: 'Open Sans', sans-serif; position: relative; overflow-x: hidden;}
+h1, h2, h3, h4 {font-family: 'Raleway', sans-serif; font-weight: 700;}
+p {color: hsl(0, 0%, 50%);}
+
+/**************** Header ************************/
+.header-grid {
+  display: grid;
+  grid-template-columns: 45% 43%;
+  grid-template-rows: auto 600px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.img-bg-mobile {display: none;}
+.img-bg-desktop {height: 625px; position: absolute; right: 0; top: 0; width: 46%; z-index: -1;}
+
+.logo-header {grid-column: 1 / span 1; grid-row: 1 / span 1; margin: 50px 0 0 75px;}
+.img-logo-header {width: 30%;}
+
+.signup-header {grid-column: 2 / span 1; grid-row: 1 / span 1; margin: 50px 75px 0 0; text-align: right;}
+.signup-header a {color: white; text-decoration: none;}
+.signup {
+  background-color: hsl(163, 95%, 43%);
+  border: solid 1px;
+  border-color: hsl(163, 95%, 43%);
+  border-radius: 4px;
+  margin-left: 25px;
+  padding: 7px 40px;
+}
+.signup:hover {background-color: hsl(163, 95%, 60%);}
+.signin:hover {opacity: 0.5;}
+
+.message-header {grid-column: 1 / span 1; grid-row: 2 / span 1; margin: 100px 0 0 75px;}
+.message-header h1 {font-size: 3rem;}
+.message-header p {margin-bottom: 40px; margin-top: 0;}
+.get-started {
+  background-color: hsl(163, 95%, 43%);
+  border: solid 1px;
+  border-color: hsl(163, 95%, 43%);
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 80px;
+  text-decoration: none;
+}
+.get-started:hover {background-color: hsl(163, 95%, 60%);}
+
+.hero-illustration {grid-column: 2 / span 1; grid-row: 2 / span 1; margin-top: 90px; text-align: center;}
+.img-hero {max-width: 65%;}
+
+/******************** First Section Content **************************/
+.backdrop-shape {
+  background-color: hsl(106, 0%, 98%);
+  border: solid 1px;
+  border-color: hsl(106, 0%, 98%);
+  border-radius: 50px;
+  height: 600px;
+  position: absolute;
+  top: 775px;
+  transform: rotate(15deg);
+  width: 100%;
+  z-index: -1;
+}
+
+.first-content-grid {
+  align-items: baseline;
+  display: grid;
+  grid-template-columns: 33% auto 33%;
+  grid-template-rows: auto auto;
+  justify-content: space-around;
+  margin: 150px auto 200px auto;
+  text-align: center;
+}
+
+.message-first-content {grid-column: 1 / span 3; grid-row: 1 / span 1;}
+.message-first-content p {margin: 16px auto 50px auto; max-width: 555px;}
+
+.all-platforms {grid-column: 1 / span 1; grid-row: 2 / span 1;}
+.all-platforms h4 {margin: 20px auto; width: 45%;}
+
+.security-trust {grid-column: 2 / span 1; grid-row: 2 / span 1;}
+
+.real-collab {grid-column: 3 / span 1; grid-row: 2 / span 1;}
+
+/******************** Second Section Content *********************/
+.second-content-grid {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 2px;
+  grid-template-columns: 34% auto auto auto;
+  grid-template-rows: 25% 22% 25% 25%;
+  justify-content: space-evenly;
+  margin: 0 50px 100px 50px;
+  text-align: center;
+}
+
+.message-one {align-self: center; grid-column: 1 / span 1; grid-row: 1 / span 4; text-align: left;}
+.message-one h2 {width: 80%;}
+
+.slack-two {
+  align-self: center;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  margin-bottom: 15px;
+  padding: 30px 0;
+}
+
+.gsuite-three {
+  align-self: start;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  margin-bottom:38px;
+  padding: 30px 0;
+}
+
+.trello-four {
+  align-self: center;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  padding: 30px 0;
+}
+
+.slack-info-five {
+  align-self: end;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  margin-top: 24px;
+  padding: 0 10px;
+}
+
+.gsuite-info-six {
+  align-self: end;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.trello-info-seven {
+  align-self: end;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-self: center;
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+  margin-bottom: 27px;
+  padding: 0 10px;
+}
+
+.asana-eight {
+  align-self: end;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  padding: 20px 0;
+}
+
+.salesforce-nine {
+  align-self: center;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+  padding: 20px 0;
+}
+
+.typeform-ten {
+  align-self: end;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-self: end;
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
+  padding: 30px 0;
+}
+
+.asana-info-eleven {
+  align-self: start;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  padding: 0 10px;
+}
+
+.salesforce-info-twelve {
+  align-self: end;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+  padding: 0 10px;
+}
+
+.typeform-info-thirteen {
+  align-self: start;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 1;
+  padding: 0 10px;
+}
+
+.img-biz {max-width: 45%;}
+
+/****************** Third Section Content **********************/
+.third-content-grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.start-fylo {
+  grid-column: 1 / span 1;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.start-fylo p {margin: 0 auto 80px auto; max-width: 638px;}
+
+/************************* Footer ********************************/
+.footer-grid {
+  align-items: center;
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  display: grid;
+  grid-template-columns: 39% auto auto auto;
+  grid-template-rows: auto;
+  justify-content: space-around;
+  padding: 100px 50px;
+}
+
+.logo-n-contact-grid {
+  align-items: baseline;
+  display: grid;
+  grid-template-columns: 8% auto;
+  grid-template-rows: auto auto 35px auto;
+  grid-column: 1 / span 1;
+}
+.logo-n-contact-grid p {color: white; max-width: 381px;}
+.img-logo-footer {width: 40%;}
+.item1 {grid-column: 1 / span 2; grid-row: 1/ span 1;}
+.item2 {grid-column: 1 / span 2; grid-row: 2 / span 1;}
+.item2 a {
+  background-color: hsl(163, 95%, 43%);
+  border: solid 1px;
+  border-color: hsl(163, 95%, 43%);
+  border-radius: 4px;
+  color: white;
+  padding: 6px 55px;
+  text-decoration: none;
+}
+.item2 a:hover {background-color: hsl(163, 95%, 60%);}
+.input {border: solid 1px; border-radius: 4px; padding: 10px 0; width: 65%;}
+.item3 {grid-column: 1 / span 1; grid-row: 3 / span 1;}
+.item4 {grid-column: 2 / span 1; grid-row: 3 / span 1; padding-top: 15px;}
+.item5 {grid-column: 1 / span 1; grid-row: 4 / span 1;}
+.item6 {grid-column: 2 / span 1; grid-row: 4 / span 1; padding-top: 15px;}
+
+.left-links {grid-column: 2 / span 1; margin-top: 38px;}
+.left-links a {color: white; display: block; padding-bottom: 15px; text-decoration: none;}
+.left-links a:hover {opacity: 0.5;}
+
+.center-links {grid-column: 3 / span 1; margin-top: 38px;}
+.center-links a {color: white; display: block; padding-bottom: 15px; text-decoration: none;}
+.center-links a:hover {opacity: 0.5;}
+
+.right-links {grid-column: 4 / span 1;}
+.right-links a {color: white; display: block; padding-bottom: 15px; text-decoration: none;}
+.right-links a:hover {opacity: 0.5;}
+
+/*********************** For Mobile *****************************/
+@media only screen and (max-width: 1175px) {
+  .input {margin-bottom: 20px;}
+}
+
+@media only screen and (max-width: 998px) {
+/************** Mobile Header *********************/
+  .img-bg-desktop {display: none;}
+  .img-bg-mobile {display: block; position: absolute; right: 0; top: 0; width: 55%; z-index: -1;}
+
+  .header-grid {grid-template-columns: auto 50%; grid-template-rows: auto auto auto;}
+
+  .logo-header {grid-column: 1 / span 1; grid-row: 1 / span 1; margin: 35px 0 0 30px;}
+  .img-logo-header {width: 70%;}
+
+  .signup-header {grid-column: 2 / span 1; grid-row: 1 / span 1; margin: 35px 30px 0 0;}
+  .signup {margin-left: 15px; padding: 7px 20px;}
+
+  .hero-illustration {grid-column: 1 / span 2; grid-row: 2 / span 1; margin-top: 50px;}
+
+  .message-header {grid-column: 1 / span 2; grid-row: 3 / span 1; margin: 20px 0 0 0; text-align: center;}
+  .message-header h1 {font-size: 2rem;}
+  .message-header p {margin: 0 auto 50px auto; max-width: 408px;}
+
+/************* Mobile First Content ********************/
+  .backdrop-shape {height: 1000px; right: 5px; top: 900px; transform: rotate(10deg); width: 110%;}
+
+  .first-content-grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    margin: 150px auto;
+  }
+
+  .message-first-content {grid-column: 1 / span 1; grid-row: 1 / span 1; padding: 25px;}
+  .message-first-content h2 {max-width: 250px; margin: auto;}
+  .message-first-content p {max-width: 350px;}
+
+  .all-platforms {grid-column: 1 / span 1; grid-row: 2 / span 1; padding: 25px;}
+
+  .security-trust {grid-column: 1 / span 1; grid-row: 3 / span 1; padding: 25px;}
+
+  .real-collab {grid-column: 1 / span 1; grid-row: 4 / span 1; padding: 25px;}
+
+/***************** Mobile Second Content *******************/
+.second-content-grid {
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(13, auto);
+  margin: 0 30px 100px 30px;
+  justify-content: center;
+}
+
+.message-one {grid-column: 1 / span 1; grid-row: 1 / span 1; text-align: center;}
+.message-one h2 {margin: auto;}
+.message-one p {margin: 40px auto; width: 86%;}
+
+.slack-two {grid-column: 1 / span 1; grid-row: 2 / span 1; margin: 30px auto 0 auto; width: 60%;}
+.slack-info-five {grid-column: 1 / span 1; grid-row: 3 / span 1; margin: 1px auto 30px auto; width: 60%;}
+
+.gsuite-three {grid-column: 1 / span 1; grid-row: 4 / span 1; margin: 0 auto 0 auto; width: 60%;}
+.gsuite-info-six {grid-column: 1 / span 1; grid-row: 5 / span 1; margin: 1px auto 30px auto; width: 60%;}
+
+.trello-four {grid-column: 1 / span 1; grid-row: 6 / span 1;  margin: 0 auto 0 auto; width: 60%;}
+.trello-info-seven {grid-column: 1 / span 1; grid-row: 7 / span 1; margin: 1px auto 30px auto; width: 60%;}
+
+.asana-eight {grid-column: 1 / span 1; grid-row: 8 / span 1; margin: 0 auto 0 auto; width: 60%;}
+.asana-info-eleven {grid-column: 1 / span 1; grid-row: 9 / span 1; margin: 1px auto 30px auto; width: 60%;}
+
+.salesforce-nine {grid-column: 1 / span 1; grid-row: 10 / span 1; margin: 0 auto 0 auto; width: 60%;}
+.salesforce-info-twelve {grid-column: 1 / span 1; grid-row: 11 / span 1; margin: 1px auto 30px auto; width: 60%;}
+
+.typeform-ten {grid-column: 1 / span 1; grid-row: 12 / span 1; margin: 0 auto 0 auto; width: 60%;}
+.typeform-info-thirteen {grid-column: 1 / span 1; grid-row: 13 / span 1; margin: 1px auto 30px auto; width: 60%;}
+
+/********************* Mobile Third Content ********************/
+.start-fylo {margin: 50px auto 100px auto;}
+
+/******************** Mobile Footer ***********************/
+.footer-grid {
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  justify-content: start;
+  padding: 100px 50px 75px 50px;
+}
+
+.logo-n-contact-grid {grid-column: 1 / span 1; grid-row: 1 / span 1;}
+
+.left-links {grid-column: 1 / span 1; grid-row: 2 / span 1; margin-top: 75px;}
+
+.center-links {grid-column: 1 / span 1; grid-row: 3 / span 1;}
+
+.right-links {grid-column: 1 / span 1; grid-row: 4 / span 1; margin-top: 38px;}
+
+}
